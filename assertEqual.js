@@ -6,10 +6,10 @@ const isAgrumentsEqual = function (a, b) {
 
 const assertEqual = function (actual, expected) {
     if (isAgrumentsEqual(actual, expected) === true ) {
-        console.log(`✅✅✅ Assertion Passed: Arrays are equal.`);
+        console.log(`✅✅✅ Assertion Passed: ${actual} and ${expected} are equal.`);
 
     } else {
-        console.log(`❌❌❌ Assertion Failed: Arrays are NOT equal.`);
+        console.log(`❌❌❌ Assertion Failed: ${actual} and ${expected} are NOT equal.`);
     }
 };
 
