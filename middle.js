@@ -1,5 +1,3 @@
-
-
 const middle = function(array) {
   const midIndex = Math.floor(array.length / 2);
   
@@ -12,5 +10,6 @@ const middle = function(array) {
   } else {
     return [array[midIndex]];
   }
-  
 };
+
+module.exports = middle;
