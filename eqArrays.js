@@ -1,4 +1,4 @@
-const isArraysEqual = function(arr1, arr2) {
+const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
   }
@@ -10,13 +10,4 @@ const isArraysEqual = function(arr1, arr2) {
   } return true;
 };
 
-
-const eqArrays = function(actual, expected) {
-  if (isArraysEqual(actual, expected)) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} and ${expected} are equal.`);
-
-  } else {
-    console.log(`❌❌❌ Assertion Failed: ${actual} and ${expected} are NOT equal.`);
-  }
-};
 module.exports = eqArrays;
