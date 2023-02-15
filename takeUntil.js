@@ -1,15 +1,15 @@
 const takeUntil = function(array, callback) {
-const results = [];
+  const results = [];
 
-for (const item of array) {
+  for (const item of array) {
 
-//exit when callback returns a truthy value
-if (callback(item)) {
-    return results;
-}
+    //exit when callback returns a truthy value
+    if (callback(item)) {
+      return results;
+    }
     results.push(item);
 
-}
+  }
 
-return results;
-}
+  return results;
+};
