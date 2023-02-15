@@ -12,16 +12,11 @@ const isArraysEqual = function(arr1, arr2) {
 
 
 const eqArrays = function(actual, expected) {
-  if (isArraysEqual(actual, expected) === true) {
+  if (isArraysEqual(actual, expected)) {
     console.log(`✅✅✅ Assertion Passed: ${actual} and ${expected} are equal.`);
 
   } else {
     console.log(`❌❌❌ Assertion Failed: ${actual} and ${expected} are NOT equal.`);
   }
 };
-
-eqArrays([1, 2, 3], [1, 2, 3]); // => true
-eqArrays([1, 2, 3], [3, 2, 1]); // => false
-
-eqArrays(["1", "2", "3"], ["1", "2", "3"]); // => true
-eqArrays(["1", "2", "3"], ["1", "2", 3]); // => false
+module.exports = eqArrays;
